@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+    <title>Invitation</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- <h2 class="text-center m-5">Dear <%= name %></h2> -->
+      <!-- <div class="instruction .d-sm-none">
+        <img src="/images/gallery-1.jpg" alt="" width="50%" class="img-fluid" />
+      </div> -->
+      <div class="book mt-1 mx-auto">
+        <div class="page cover-front" onclick="movePage(this, 1)">
+          <h1>Soe &#x1F499; Phyu</h1>
+          <div class="hat"><i class="fab fa-pied-piper-hat"></i></div>
+          <h2>Wedding Invitation for <%= name %></h2>
+        </div>
+        <div class="page cover-front" onclick="movePage(this, 2)">
+          <h4 class="text-center">မင်္ဂလာအစီအစဉ်</h4>
+          <div class="row mt-5">
+            <div class="col text-center">
+              <p><b>နေ့ရက်</b></p>
+              <p>၃ဝ.၇.၂ဝ၂၃<br />(တနင်္ဂနွေနေ့)</p>
+            </div>
+            <div class="col text-center">
+              <p><b>အချိန်</b></p>
+              <p>နံနက်(၁ဝ)နာရီမှ<br />နေ့လယ်(၁၂)နာရီထိ</p>
+            </div>
+          </div>
+          <div class="row mt-1">
+            <div class="col text-center">
+              <p><b>နေရာ</b></p>
+              <p>
+                <b>ပစ္ဆိမာရုံပရိယတ္တိစာသင်တိုက် </b
+                ><small>(တာဝတိံသာဘုရားအနီး)</small>
+              </p>
+            </div>
+          </div>
+          <div class="row gap-2">
+            <div class="col">
+              <img src="/images/aye.png" alt="" width="100%" />
+              <p class="text-center">AYA</p>
+            </div>
+            <div class="col">
+              <img src="/images/kbz.jpg" alt="" width="100%" />
+              <p class="text-center">KBZ Pay</p>
+            </div>
+          </div>
+          <div class="row gap-2">
+            <div class="col">
+              <img src="/images/wave.jpg" alt="" width="100%" />
+              <p class="text-center">WAVE Pay</p>
+            </div>
+            <div class="col mt-3">
+              <p>
+                <b>
+                  ပါဆယ်ပစ္စည်းများဖြင့် မင်္ဂလာလက်ဖွဲ့ခြင်း သည်းခံပါရန်
+                  လေးစားစွာ မေတ္တာရပ်ခံအပ်ပါသည်။</b
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="page cover-front">
+          <h4>မင်္ဂလာဦးဆွမ်းကျွေး ဖိတ်ကြားလွှာ</h4>
+          <pre class="mt-5 text-center">
+<small>ပုသိမ်မြို့၊ နှစ်ကျိပ်ရှစ်ဆူလမ်း၊ အမှတ်(၁၂)နေ </small>
+<b>ဦးစိန်ဌေး</b><small>(ညွန်ကြားရေးမှူး-ငြိမ်း၊ နယ်စပ်ဦးစီး)</small>+<b>ဒေါ်ခင်မိုးဝင်း</b>
+<small><i>(Shwe Yee Phoo Korean Food)</i>တို့၏ သားလတ်</small>
+          </pre>
+          <h5 class="text-center">မောင်စိုးဝေယံမောင်</h5>
+          <h6 class="text-center">BE (IT)</h6>
+          <h6 class="text-center small"><small>နှင့်</small></h6>
+          <pre class="mt-4 text-center">
+<small>ကန်ကြီးထောင့်မြို့၊ ပဒေါင်းပိုင်းလမ်း၊ အမှတ်(၁)ရပ်ကွက်နေ </small>
+<b>ဦးသန်းဌေး+ဒေါ်မြင့်မြင့်ဦး</b><small><i>(Empress Korean Food)</i>
+  တို့၏ သမီး</small>
+            </pre>
+          <h5 class="text-center">မဖြူဖွေးသန့်</h5>
+          <h6 class="text-center">Final Year (Myanmar)</h6>
+          <h6 class="text-center small"><small>တို့၏</small></h6>
+          <p class="text-center mt-4 small">
+            "မင်္ဂလာဦးဆွမ်းကျွေး" သို့ ကြွရောက်ချီးမြှင့်ပါရန် <br />
+            ခင်မင်ရင်းနှီးစွာ ဖိတ်ကြားအပ်ပါသည်။
+          </p>
+        </div>
+
+        <div class="page text-page" onclick="movePage(this, 4)"></div>
+        <div class="page text-page" onclick="movePage(this, 5)"></div>
+        <div class="page text-page" onclick="movePage(this, 6)"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+      </div>
+    </div>
+  </body>
+  <script>
+    let currentPage = 1;
+
+    function toggleClass(e, toggleClassName) {
+      if (e.className.includes(toggleClassName)) {
+        e.className = e.className.replace(" " + toggleClassName, "");
+      } else {
+        e.className += " " + toggleClassName;
+      }
+    }
+
+    function movePage(e, page) {
+      if (page == currentPage) {
+        currentPage += 2;
+        toggleClass(e, "left-side");
+        toggleClass(e.nextElementSibling, "left-side");
+      } else if ((page = currentPage - 1)) {
+        currentPage -= 2;
+        toggleClass(e, "left-side");
+        toggleClass(e.previousElementSibling, "left-side");
+      }
+    }
+  </script>
+</html>
